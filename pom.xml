@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>br.edu.iftm</groupId>
-    <artifactId>web1ppw2</artifactId>
+    <artifactId>ppw2-project</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>web1ppw2</name>
+    <name>ppw2-project</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>

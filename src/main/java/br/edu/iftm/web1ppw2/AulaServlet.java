@@ -40,6 +40,13 @@ public class AulaServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet AulaServlet at " + request.getContextPath() + "</h1>");
+            out.println("<ul>");
+            for (int i = 0; i < 10; i++) {
+                out.println("<li>");
+                    out.println("<p>" + "Olá " + i + "</p>");
+                out.println("</li>");
+            }
+            out.println("</ul>");
             out.println("</body>");
             out.println("</html>");
         }

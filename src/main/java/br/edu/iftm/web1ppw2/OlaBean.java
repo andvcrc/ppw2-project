@@ -4,11 +4,18 @@
  */
 package br.edu.iftm.web1ppw2;
 
+import java.io.Serializable;
+import javax.enterprise.context.SessionScoped;
+import javax.inject.Named;
+
 /**
  *
  * @author IFTM
  */
-public class OlaBean {
+@Named
+@SessionScoped
+public class OlaBean implements Serializable {
+
     private String nome;
 
     public String getNome() {
@@ -18,5 +25,9 @@ public class OlaBean {
     public void setNome(String nome) {
         this.nome = nome;
     }
-    
+
+    public String olaNome() {
+        return ("Olá " + "Usuário");
+    }
+
 }

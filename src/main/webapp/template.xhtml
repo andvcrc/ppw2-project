@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    
+    <h:head>
+        <title>Projeto Web</title>
+        <h:outputStylesheet library="ppw2-project" name="css/main.css"/>
+    </h:head>
+    <h:body>
+        
+            <p:menubar>
+                <p:menuitem>
+                    <h:graphicImage library="ppw2-project" name="images/logo.png" style="max-width: 60px"/>
+                </p:menuitem>
+                <p:menuitem url="index.xhtml" value="Inicio"></p:menuitem>
+                <p:submenu label="Cadastros">
+                    <p:menuitem value="Usuários"></p:menuitem>
+                    <p:menuitem value="Clientes"></p:menuitem>
+                    <p:menuitem value="Produtos"></p:menuitem>
+                </p:submenu>
+            </p:menubar>
+        <ui:insert class="body">
+        </ui:insert>
+        
+    </h:body>
+</html>
+

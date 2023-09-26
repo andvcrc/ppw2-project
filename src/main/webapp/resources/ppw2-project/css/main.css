@@ -16,7 +16,7 @@ header .item-logo {
 }
 
 header .ui-menuitem-link:has(img) {
-    padding: 5px!important;
+    padding: 0px!important;
 }
 
 main {

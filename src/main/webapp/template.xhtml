@@ -14,18 +14,18 @@
 
         <header>
             <p:menubar>
-                <p:menuitem url="index.xhtml">
+                <p:menuitem url="#{request.servletContext.contextPath}/index.xhtml">
                     <h:graphicImage library="ppw2-project" name="images/logo.png" class="item-logo"/>
                 </p:menuitem>
-                <p:menuitem url="index.xhtml" value="Inicio"></p:menuitem>
+                <p:menuitem url="#{request.servletContext.contextPath}/index.xhtml" value="Inicio"></p:menuitem>
                 <p:submenu label="Cadastros">
-                    <p:menuitem value="Usuários" url="/cadastros/usuario.xhtml"></p:menuitem>
-                    <p:menuitem value="Clientes"></p:menuitem>
-                    <p:menuitem value="Produtos"></p:menuitem>
+                    <p:menuitem value="Usuários" url="#{request.servletContext.contextPath}/cadastros/usuario.xhtml"></p:menuitem>
+                    <p:menuitem value="Clientes" url="#{request.servletContext.contextPath}/cadastros/cliente.xhtml"></p:menuitem>
+                    <p:menuitem value="Produtos" url="#{request.servletContext.contextPath}/cadastros/produto.xhtml"></p:menuitem>
                 </p:submenu>
             </p:menubar>
         </header>
-        
+
         <main>
             <ui:insert class="body">
             </ui:insert>
